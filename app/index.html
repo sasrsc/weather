@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="OWMApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Open Weather Map App</title>
+	<link rel="stylesheet" href="custom.css">
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+	<h1>Open Weather Map App</h1>
+	<ul class="nav nav-pills">
+		<li><a href="#/cities/New_York">New York</a></li>
+	    <li><a href="#/cities/Dallas">Dallas</a></li>
+	    <li><a href="#/cities/Chicago">Chicago</a></li>
+	    <li><a href="#">Home</a></li>
+	</ul>
+
+	<div ng-view></div>
+
+	
+	
+	<div id="mentor">
+		<h2>Mentor Comments</h2>
+		<ul>
+			<li>Why put the script tags at the bottom and not in the head? I understand it that you want angular loading last.
+			</li>
+			<li>That was a rather large leap when explaining the method of handling cities that you don't have content for in lesson 1.2. For example $route.current.params.city? why have current? previously it was $routeParams.city</li>
+			<li>Is the directory structure correct? <pre>../bower_components</pre> from the index file? really? shouldn't it be bower_components/ </li>
+			<li>So with $scope.city = city; statement there's nothing in the html to specify the ng-model for $scope.city. Instead it sets the value simply from the hash tag.</li>
+		</ul>
+	</div>
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+	<script type="text/javascript" src="../bower_components/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="owm-app.js"></script>
+</body>
+</html>

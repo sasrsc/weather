@@ -1,0 +1,13 @@
+html {
+	margin: 5px;
+}
+#mentor {
+	border: 1px solid #ccc;
+	margin-top: 30px;
+	padding: 10px;
+}
+
+.error {
+	color: red;
+	font-size: 2em;
+}
